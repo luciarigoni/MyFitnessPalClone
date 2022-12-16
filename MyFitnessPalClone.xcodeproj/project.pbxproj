@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		0F8D9FB8294CB1B300BC92C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8D9FB7294CB1B300BC92C6 /* AppDelegate.swift */; };
 		0F8D9FBA294CB1B300BC92C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8D9FB9294CB1B300BC92C6 /* SceneDelegate.swift */; };
-		0F8D9FBC294CB1B300BC92C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8D9FBB294CB1B300BC92C6 /* ViewController.swift */; };
-		0F8D9FBF294CB1B300BC92C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F8D9FBD294CB1B300BC92C6 /* Main.storyboard */; };
+		0F8D9FBC294CB1B300BC92C6 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8D9FBB294CB1B300BC92C6 /* LoginVC.swift */; };
 		0F8D9FC1294CB1B400BC92C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F8D9FC0294CB1B400BC92C6 /* Assets.xcassets */; };
 		0F8D9FC4294CB1B400BC92C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F8D9FC2294CB1B400BC92C6 /* LaunchScreen.storyboard */; };
+		0F8D9FCF294CB34A00BC92C6 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8D9FCE294CB34A00BC92C6 /* LoginScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0F8D9FB4294CB1B300BC92C6 /* MyFitnessPalClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFitnessPalClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F8D9FB7294CB1B300BC92C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F8D9FB9294CB1B300BC92C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0F8D9FBB294CB1B300BC92C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0F8D9FBE294CB1B300BC92C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0F8D9FBB294CB1B300BC92C6 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		0F8D9FC0294CB1B400BC92C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F8D9FC3294CB1B400BC92C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F8D9FC5294CB1B400BC92C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F8D9FCE294CB34A00BC92C6 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,39 @@
 		0F8D9FB6294CB1B300BC92C6 /* MyFitnessPalClone */ = {
 			isa = PBXGroup;
 			children = (
+				0F8D9FCB294CB2B900BC92C6 /* Login */,
 				0F8D9FB7294CB1B300BC92C6 /* AppDelegate.swift */,
 				0F8D9FB9294CB1B300BC92C6 /* SceneDelegate.swift */,
-				0F8D9FBB294CB1B300BC92C6 /* ViewController.swift */,
-				0F8D9FBD294CB1B300BC92C6 /* Main.storyboard */,
 				0F8D9FC0294CB1B400BC92C6 /* Assets.xcassets */,
 				0F8D9FC2294CB1B400BC92C6 /* LaunchScreen.storyboard */,
 				0F8D9FC5294CB1B400BC92C6 /* Info.plist */,
 			);
 			path = MyFitnessPalClone;
+			sourceTree = "<group>";
+		};
+		0F8D9FCB294CB2B900BC92C6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0F8D9FCC294CB2C800BC92C6 /* Screen */,
+				0F8D9FCD294CB2D200BC92C6 /* VC */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0F8D9FCC294CB2C800BC92C6 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				0F8D9FCE294CB34A00BC92C6 /* LoginScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		0F8D9FCD294CB2D200BC92C6 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				0F8D9FBB294CB1B300BC92C6 /* LoginVC.swift */,
+			);
+			path = VC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +151,6 @@
 			files = (
 				0F8D9FC4294CB1B400BC92C6 /* LaunchScreen.storyboard in Resources */,
 				0F8D9FC1294CB1B400BC92C6 /* Assets.xcassets in Resources */,
-				0F8D9FBF294CB1B300BC92C6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +161,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F8D9FBC294CB1B300BC92C6 /* ViewController.swift in Sources */,
+				0F8D9FBC294CB1B300BC92C6 /* LoginVC.swift in Sources */,
+				0F8D9FCF294CB34A00BC92C6 /* LoginScreen.swift in Sources */,
 				0F8D9FB8294CB1B300BC92C6 /* AppDelegate.swift in Sources */,
 				0F8D9FBA294CB1B300BC92C6 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +171,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0F8D9FBD294CB1B300BC92C6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0F8D9FBE294CB1B300BC92C6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0F8D9FC2294CB1B400BC92C6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +308,7 @@
 				INFOPLIST_FILE = MyFitnessPalClone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +336,7 @@
 				INFOPLIST_FILE = MyFitnessPalClone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
